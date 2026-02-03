@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* 橙蟹品牌配色方案 */
+  --color-primary: #FF6B00;
+  --color-secondary: #FF9E53;
+  --color-accent: #FFD1A7;
+  --color-dark: #1D2129;
+  --color-light: #FFF8F1;
+  
+  /* 自定义工具类 */
+  --animate-pulse-slow: 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: white;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #165DFF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0E2F56;
+}
